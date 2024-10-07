@@ -61,7 +61,7 @@ export default {
         <img width="40" :src="usuario.chip" alt="" />
         <div>
             <h2> {{ usuario.numero }}</h2>
-            <span>Fecha Exp: <b>01/30</b></span>
+            <span>Fecha Exp: <b> {{ usuario.fecha }}</b></span>
         </div>
         <footer>
             <span> {{ usuario.propietario }}</span>
