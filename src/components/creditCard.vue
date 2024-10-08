@@ -58,14 +58,14 @@ export default {
 
         <div class="carnet">
         <h3> {{ usuario.titulo }} </h3>
-        <img width="40" :src="usuario.chip" alt="" />
+        <img width="40" :src="'/img'+usuario.chip" alt="" />
         <div>
             <h2> {{ usuario.numero }}</h2>
             <span>Fecha Exp: <b> {{ usuario.fecha }}</b></span>
         </div>
         <footer>
             <span> {{ usuario.propietario }}</span>
-            <img v-bind:src="usuario.tipo" width="60" />
+            <img :src="'/img'+usuario.tipo" width="60" />
         </footer>
         </div>
     </body>
